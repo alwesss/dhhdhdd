@@ -1,0 +1,13 @@
+SOYO Tam Otomatik v2.4 - hızlı test listesi
+
+1) Erişilebilirlik servisinin adının "SOYO Tam Otomatik" göründüğünü ve açık olduğunu kontrol et.
+2) Önerilenler'de 3-5 kişi art arda işlensin:
+   - aynı satıra geri girmemeli,
+   - aynı sohbete iki kez mesaj atmamalı,
+   - her gönderimden sonra sıradaki sohbete geçmeli.
+3) SOYO mesajdan sonra kendi kendine listeye dönüyorsa yeni sohbet önceki state temizlenmeden açılmamalı.
+4) Yeni sohbet açıldığında ekrana elle dokunmadan/kaydırmadan mesaj hazırlanıp gönderilmeli.
+5) Erişilebilirlik servisini kapatıp tekrar açtıktan sonra, aynı ekranda son işlenen satırlara hemen tekrar girmemeli (son satırlar 6 saat tutulur).
+6) Arayüzde manuel ONAYLA ve Tam Otomatik aç/kapa kutusu olmamalı. Yalnızca servis izni, VIP filtresi, hitap ve mesaj şablonu ayarları kalır.
+
+Not: Bu ortamda Android SDK/Gradle bağımlılıkları bulunmadığı için APK yerel olarak derlenemedi. Kaynak Java sözdizimi ve XML dosyaları statik olarak kontrol edildi; projedeki GitHub Actions iş akışı gradle assembleDebug ile APK üretmeye devam eder.

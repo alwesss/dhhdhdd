@@ -1,0 +1,12 @@
+SOYO Tam Otomatik v2.4 — tekrar sohbet / çift mesaj / takılma düzeltmesi
+
+- Manuel ONAYLA modu tamamen kaldırıldı; erişilebilirlik servisi açıkken akış daima tam otomatik.
+- Aynı sohbet için gönder düğmesine artık yalnızca bir kez basılır. Gönderim kanıtı gecikirse ikinci kez körlemesine tıklanmaz.
+- İşlenen öneri satırları yalnızca ada göre değil satır içeriğine göre anahtarlanır; aynı isimli farklı kişiler gereksiz yere tek kişi sayılmaz.
+- Son işlenen satırlar 6 saat boyunca SharedPreferences içinde tutulur. Servisi kapatıp açmak aynı satıra hemen yeniden girmesine yol açmaz.
+- Eski 3,5 saniyelik "aynı isim" hazırlama kilidi kaldırıldı. Bu kilit yeni sohbet açıldığında servis event almazsa elle kaydırmaya kadar beklemeye neden olabiliyordu.
+- Sohbet satırına tıklandıktan 140 ms ve 520 ms sonra kontrollü yeniden tarama eklenerek Flutter geçişinde event kaybolsa bile mesaj hazırlama devam eder.
+- SOYO dışına çıkıldığında eski sohbetten kalan taşıma/pending state temizlenir; geri gelince gecikmiş callback eski kişiye işlem yapamaz.
+- Tam otomatik aç/kapa kutusu ve otomatik aç kutusu arayüzden kaldırıldı; mod sabit tam otomatik hale getirildi.
+
+Sürüm 2.4 / versionCode 15.
